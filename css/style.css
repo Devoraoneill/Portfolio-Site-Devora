@@ -4,10 +4,10 @@ Primary Color (Red): #f54e60;
 Secondary Color (Pink): #ffb8b8;
 Backgtound (light Pink): #fff6f8;
 */
-
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #fff6f8 font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
@@ -57,7 +57,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 a:active {
   /* selected link */
   color: #f54e60;
@@ -91,161 +90,178 @@ a:active {
   background-color: #ffb8b8;
   color: #000000;
 }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-#hero h1 {
+
+#work {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1{
   margin: 0;
-padding: 0.67em 0;
-  text-align: center; /* Centers text */
+  padding: 0.67em 0;
+  text-align: center;
+  /* Centers text */
   color: #ffffff;
 }
+
 #logo {
   max-width: 250px;
   text-align: center;
 }
+
 header {
   background-color: #f54e60;
   -webkit-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.5);
--moz-box-shadow:    0px 3px 11px 0px rgba(50, 50, 50, 0.5);
-box-shadow:         0px 3px 11px 0px rgba(50, 50, 50, 0.5);
-position: fixed;
-width: 100%;
-text-align: center;
+  -moz-box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.5);
+  position: fixed;
+  width: 100%;
+  text-align: center;
   padding: 10px 0;
 }
 
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
-  width: 100%;
+  /* width: 100%; */
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
 }
-nav > ul > li > a:hover {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-display: inline-block;
-width: 100%;
+
+
+nav>ul>li>a:active {
+  color: gray;
+
 }
-nav > ul > li > a:active {
-padding: 0 15px;
-text-transform: uppercase;
-font-weight: 700;
-display: inline-block;
-width: 100%;
-}
+
 footer {
   background-color: #ffb8b8;
   text-align: center;
   padding: 10px 0;
 }
-footer > ul {
+
+footer ul {
   list-style-type: none;
   padding: 0;
 }
-footer > ul > li {
-  display: inline-block;
-  width: 100%;
+
+footer li {
+  display: inline;
+
 }
+
 #hero {
   background-color: #f54e60;
   color: #ffffff;
 }
+
 main {
   padding-top: 103.19px;
 }
+
 #about {
   background-color: #f54e60;
+  margin: 0;
 }
-
 
 #about h1 {
-    margin: 0;
+  margin: 0;
   padding: 0.67em 0;
-    text-align: center; /* Centers text */
-    color: #ffffff;
-
-}
-header {
-  display: flex;
   text-align: center;
+  /* Centers text */
+  color: #ffffff;
 }
 
-.list {
-  display: flex;
-  justify-content: space-around;
-max-width: 300px;
-  list-style: none;
-}
 
-.list>li {
-  padding-left: 5px;
-  padding-right: 5px;
-
-}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav{
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-main {
-  padding-top: 99px;
-}
-body {
-  font-size: 18px;
-}
-#hero {
-  text-align: center;
-  font-weight: 400;
-}
-#hero span {
-  display: block;
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 { margin-top: 0;}
 }
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.row: after {
-  content: "";
-  clear: both;
-  display: table;
-}
-}
+
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
+}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
