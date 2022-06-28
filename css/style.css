@@ -9,7 +9,8 @@ Backgtound (light Pink): #fff6f8;
 }
 
 body {
-  background-color: #fff6f8 font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff6f8;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -83,7 +84,7 @@ a:active {
   background-color: transparent;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid ##f54e60;
+  border: 2px solid #f54e60;
 }
 
 .button.contact:hover {
@@ -177,6 +178,10 @@ footer li {
 
 main {
   padding-top: 103.19px;
+}
+
+.hero-section {
+  background-color: #f54e60;
 }
 
 #about {
