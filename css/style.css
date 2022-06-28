@@ -183,10 +183,14 @@ main {
 .hero-section {
   background-color: #f54e60;
 }
+.profile-picture {
+  max-width: 250px;
+}
 
 #about {
   background-color: #f54e60;
   margin: 0;
+  text-align: center;
 }
 
 #about h1 {
