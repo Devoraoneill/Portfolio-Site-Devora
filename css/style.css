@@ -22,8 +22,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2.75;
+  font-weight: 600;
   text-transform: uppercase;
   color: #f54e60;
 }
@@ -114,6 +114,10 @@ a:active {
   text-align: center;
   /* Centers text */
   color: #ffffff;
+}
+#hero p{
+  padding-bottom: 20px;
+
 }
 
 #logo {
@@ -220,6 +224,7 @@ main {
 }
 .profile-picture {
   max-width: 250px;
+  padding-bottom: 20px;
 }
 
 #about {
