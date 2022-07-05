@@ -7,26 +7,28 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro=300,400,600,700' rel='stylesheet' type='text/css'>
 
-
-
   <meta charset="utf-8">
   <title> Devora O'Neill UI/UX Designer London </title>
 </head>
 
 <body>
   <header>
-    <div>
 
-    </div>
     <div class="container">
-      <img src="./img/logos/logo.svg" alt="logo" id="logo" />
-      <nav>
-        <ul class="list">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="aboutDevoraONeill.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img src="./img/logos/logo.svg" alt="logo" id="logo" />
+        <nav>
+          <ul class="list">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="aboutDevoraONeill.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -762,6 +764,7 @@
       <p>Copyright Devora O'Neill 2022</p>
     </div>
   </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 

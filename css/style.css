@@ -121,9 +121,10 @@ a:active {
 }
 
 #logo {
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 5px;
+
 }
 .berlin-illustration {
   width: 100%;
@@ -167,25 +168,46 @@ header {
   box-shadow: 0px 3px 11px 0px rgba(50, 50, 50, 0.5);
   position: fixed;
   width: 100%;
-  text-align: center;
+  padding: 10px 0 4px;
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
   padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-nav>ul {
-  list-style-type: none;
-  padding: 0;
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
-
-nav>ul>li {
-  display: inline-block;
-  /* width: 100%; */
-}
-
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
+}
+nav>ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 
@@ -216,7 +238,7 @@ footer li {
 }
 
 main {
-  padding-top: 103.19px;
+  padding-top: 58px;
 }
 
 .hero-section {
@@ -283,14 +305,30 @@ Medium devices (640px and larger)
     padding-left: 10px;
     padding-right: 10px;
   }
-
+  #logo {
+    max-width: 200px;
+    padding-top: 20px;
+    }
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
   #about-page h3 { margin-top: 0;}
+  nav>ul>li {
+    display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
 }
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
+}
+
 
 
 /* ==============================

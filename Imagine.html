@@ -6,7 +6,6 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro=300,400,600,700' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta charset="utf-8">
   <title> About Devora O'Neill </title>
 </head>
@@ -14,25 +13,20 @@
 <body>
   <header>
     <div class="container">
-      <svg id="logo" width="145px" height="16px" viewBox="0 0 145 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Imagine</title>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-          font-family="SourceSansPro-Regular, Source Sans Pro" font-size="21" font-weight="normal">
-          <g id="Artboard-Copy-4" transform="translate(-54.000000, -272.000000)" fill="#040404">
-            <text id="DEVORA-O’NEILL-Copy">
-              <tspan x="53" y="287">DEVORA O’NEILL</tspan>
-            </text>
-          </g>
-        </g>
-      </svg>
-      <nav>
-        <ul class="list">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="aboutDevoraONeill.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img src="./img/logos/logo.svg" alt="logo" id="logo" />
+        <nav>
+          <ul class="list">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="aboutDevoraONeill.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -212,8 +206,7 @@
       <div>
         <ul class="list">
           <li><a href="Behance-URL" target="_blank">
-              <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>R.90a3703e2a51f811f39b62559c07c711</title>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Home" transform="translate(-72.000000, -1633.000000)">
@@ -228,8 +221,7 @@
             </a></li>
 
           <li><a href="LINKEDIN-URL" target="_blank">
-              <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>R.eb68b87815aaaaba6621aa98d2e38bf5</title>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Home" transform="translate(-174.000000, -1633.000000)">
@@ -243,8 +235,7 @@
               </svg>
             </a></li>
           <li><a href="INSTAGRAM-ULR">
-              <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>img_24859</title>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Home" transform="translate(-276.000000, -1633.000000)">
@@ -263,6 +254,8 @@
       <p>Copyright Devora O'Neill 2022</p>
     </div>
   </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 
