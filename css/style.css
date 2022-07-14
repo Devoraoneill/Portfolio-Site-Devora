@@ -18,16 +18,18 @@ body {
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 h1 {
+  font-family: "Playfair Display";
   font-size: 2.75;
   font-weight: 600;
-  text-transform: uppercase;
   color: #f54e60;
 }
-
+#intro {
+  font-size: 1.75;
+}
 h2 {
   font-size: 2.25em;
   font-weight: 600;
@@ -41,6 +43,10 @@ h3 {
 
 h4 {
   font-size: 1.35em;
+  font-weight: 300;
+}
+p{
+  font-size: 1.2em;
   font-weight: 300;
 }
 
