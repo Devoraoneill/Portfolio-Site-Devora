@@ -27,9 +27,7 @@ h1 {
   font-weight: 600;
   color: #f54e60;
 }
-#intro {
-  font-size: 1.75;
-}
+
 h2 {
   font-size: 2.25em;
   font-weight: 600;
@@ -45,7 +43,8 @@ h4 {
   font-size: 1.35em;
   font-weight: 300;
 }
-p{
+
+p {
   font-size: 1.2em;
   font-weight: 300;
 }
@@ -108,39 +107,49 @@ a:active {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
 }
+#contact h2{
+  color: black;
+}
 
 #work {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
-#hero h1{
+#hero h1 {
   margin: 0;
   padding: 0.67em 0;
   text-align: center;
   /* Centers text */
   color: #ffffff;
 }
-#hero p{
-  padding-bottom: 20px;
 
+#hero p {
+  padding-bottom: 20px;
 }
 
 #logo {
   max-width: 150px;
   text-align: center;
   padding-top: 5px;
-
 }
+
 .berlin-illustration {
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -148,10 +157,17 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -159,10 +175,17 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -177,49 +200,53 @@ header {
   padding: 10px 0 4px;
 }
 
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
 }
+
 nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-
 nav>ul>li>a:active {
   color: gray;
-
 }
 
 footer {
@@ -235,7 +262,6 @@ footer ul {
 
 footer li {
   display: inline;
-
 }
 
 #hero {
@@ -250,6 +276,7 @@ main {
 .hero-section {
   background-color: #f54e60;
 }
+
 .profile-picture {
   max-width: 250px;
   padding-bottom: 20px;
@@ -268,7 +295,6 @@ main {
   /* Centers text */
   color: #ffffff;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -311,31 +337,38 @@ Medium devices (640px and larger)
     padding-left: 10px;
     padding-right: 10px;
   }
+
   #logo {
     max-width: 200px;
     padding-top: 20px;
-    }
+  }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
-  #about-page h3 { margin-top: 0;}
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
   nav>ul>li {
     display: inline-block;
-    }
-    .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-nav > ul {
-  margin: 1em 0;
-}
-}
+  }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -345,14 +378,16 @@ Large devices (1024px or larger)
     width: 60%;
     float: left;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ==============================
